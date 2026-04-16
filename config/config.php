@@ -1,0 +1,25 @@
+<?php
+// Detecta se está local ou produção
+if ($_SERVER['HTTP_HOST'] === 'localhost') {
+    define('BASE_URL', 'http://localhost/projetos/site-blogCardsEmPilha-backoffice');  // Para links
+
+    // Constantes do sistema AMBIENTE DEV 
+    // ENVIRONMENT DEV system constants
+
+    // Configuração do banco de dados local
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_NAME', 'pablotetsuosatoblog');
+
+    date_default_timezone_set('America/Sao_Paulo');
+
+} else {
+    define('BASE_URL', 'https://vlogrock.com'); // Para links
+
+    // Constantes do sistema AMBIENTE DEV 
+    // ENVIRONMENT DEV system constants
+    include '../../etc/vlogrock.com/configProducao.php'; // Inclui o arquivo de configuração com as constantes de produção
+
+    date_default_timezone_set('America/Sao_Paulo');
+}
