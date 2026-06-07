@@ -28,7 +28,7 @@
   <meta name="twitter:url" content="<?= BASE_URL ?>">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" crossorigin="anonymous" href="<?= BASE_URL ?>/assets/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" crossorigin="anonymous" href="<?= BASE_URL ?>/assets/bootstrap/5.3.8/css/bootstrap.min.css">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="<?= BASE_URL ?>/assets/bootstrap-icons/1.13.1/bootstrap-icons.css">
